@@ -1,0 +1,3363 @@
+/* Generic settings for all screen formats */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    /* background-color: #0f385b; */
+}
+
+main {
+    background-color: #e97e5d;
+    padding-top: 25px;
+    /* background-color: #0f385b; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Menu */
+
+nav {
+    position: relative;
+    height: auto;
+    overflow: visible;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+nav a {
+    font-family: 'Signika Negative', sans-serif;
+    color:#0f385b;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 6px;
+    line-height: 80px;
+    text-align: center;
+    /* float: left; */
+    width: fit-content;
+    /* margin-right: 1%;  */
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: -60px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav a {
+    color:#0f385b;
+    font-size: 30px;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+nav #icon {
+    color:#0f385b;
+    font-size: 30px;
+    float: right;
+    line-height: 0;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav a img {
+    height: fit-content;
+    float: left;
+    margin-left: 80px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    margin-right: -120px;
+}
+
+nav a:hover {
+    color:#e45e35;
+    font-size: 32px;
+}
+
+.logo {
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: -5%; */
+    width: 22%;
+    height: auto;
+    
+}
+
+/* Page Heading */
+
+h1 {
+    text-align: center;
+    color: #fbfcfd;
+    text-shadow: 0 0 7px #0f385b, 0 0 7px #0f385b;
+    padding-bottom: 2%;
+}
+
+/* Index Navigation bones */
+
+.navleft {
+    background-color: #e97e5d;
+}
+
+.navright {
+    background-color: #e97e5d;
+}
+
+div .indexnav {
+    background-color: #e97e5d;
+}
+
+/* Price Guide Tables */
+
+h2.note {
+    color: #0f385b;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    width: 85%;
+    height: auto;
+    background-color: #fbfcfd;
+    color: #000;
+    margin-left: 7%;
+    margin-bottom: 3%;
+    border: 7px ridge #0f385b;
+}
+
+th {
+    font-size: 30px;
+    background-color: #0f385b;
+    color:#fbfcfd;
+}
+
+td {
+    font-size: 25px;
+}
+
+th,td {
+    text-align: center;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #fbfcfd;
+}
+
+tr:hover {
+    background-color: #5b8abb;
+    color: #fff;
+}
+
+/* Gallery Images */
+
+.gallery img {
+    height: auto;
+    border: 2px solid #fbfcfd;
+    /* width: 50%; */
+    transition: all .5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 7px 5px 5px #000;
+} 
+
+.gallery {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+.left {
+    float: left;
+    padding-left: 2.3%;
+    padding-top: 8%;
+}
+
+.right {
+    float: right;
+    padding-right: 2.3%;
+    padding-top: 8%;
+}
+
+/* Review Testimonials */
+
+p.testimonials {
+    background-color: #fbfcfd;
+    border: 7px ridge #0f385b;
+    text-align: center;
+}
+
+/* About Columns */
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column h2 {
+    font-family: 'Cherry Cream Soda', sans-serif;
+    color: #fbfcfd;
+    text-align: center;
+    /* text-shadow: 0 0 7px #fbfcfd, 0 0 7px #fbfcfd; */
+}
+
+.column img {
+    margin-left: 25%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.column p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 24px;
+    background-color: #fbfcfd;
+    margin-right: 7%;
+    margin-top: 18%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    border: 7px ridge #0f385b;
+}
+
+/* Contact Columns */
+
+.column1 {
+    float: left;
+    width: 40%;
+    background-color: #fbfcfd;
+    border: 7px ridge #0f385b;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    /* padding-right: -30px; */
+}
+
+.column2 {
+    float: right;
+    width: 40%;
+    background-color: #fbfcfd;
+    border: 7px ridge #0f385b;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1 h3 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.column1 p {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.column2 h3 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.column2 p {
+    font-family: 'Signika Negative', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.row1 {
+    padding-bottom: 2%;
+}
+
+.contact h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 36px;
+    color: #0f385b;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fbfcfd;
+    color: #0f385b;
+    text-align: center;
+}
+
+/* Bubble Formatting */
+
+.galleryset {
+    width: 100px;
+    height: auto;
+}
+
+.homeset {
+    width: 100px;
+    height: auto;
+}
+
+.pricingset {
+    width: 100px;
+    height: auto;
+}
+
+.aboutset {
+    width: 100px;
+    height: auto;
+}
+
+.reviewset {
+    width: 100px;
+    height: auto;
+}
+
+.contactset {
+    width: 100px;
+    height: auto;
+}
+
+/* ID Formatting */
+
+#wrapper {
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    /* background-color: #0f385b; */
+    background-color: #fbfcfd;
+    box-shadow: 10px 10px 10px #000;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* .topnav-centered a {
+    float:none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-right: -20%;
+}
+
+.topnav-right {
+    float:right;
+    margin-left: -10%;
+} */
+
+/* Mobile Phone format */
+
+@media (max-width: 949px) {
+    /* Navigation Menu  */
+    nav a img {
+        margin-top: auto;
+        margin-left: 30px;
+    }   
+    
+    nav a {
+        font-size: 17px;
+        height: 100px;
+    }
+
+    nav #icon {
+        display: block;
+        color: #0f385b;
+        font-size: 45px;
+        margin-top: -20px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        background-color: #fbfcfd;
+        margin-top: 50px;
+        margin-left: 10%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+        line-height: 10px;
+    }
+    
+    nav a {
+        font-size: 30px;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+    
+    nav li:hover {
+        background-color: #5b8abb;
+        color: #fbfcfd;
+    }
+
+    /* Heading */
+
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Index Navigation Bones */
+
+    div .indexnav {
+        margin-left: 10%;
+    }
+
+    .indexnav img {
+        width: 90%;
+        /* padding-left: 7%;
+        padding-right: 7%; */
+    }
+
+    /* Pricing Table */
+
+    th {
+        font-size: 20px;
+    }
+    
+    td {
+        font-size: 15px;
+    }
+
+    /* Gallery Images */
+
+    .gallery img {
+        width: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Review Testimonials */
+
+    p.testimonials {
+        margin: 15px;
+        padding: 5px;
+    }
+
+    /* About Columns */
+
+    .column h2 {
+        font-size: 24px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .column p {
+        font-size: 16px;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        align-content: center;
+    }
+
+    .column img { 
+        display: none;
+    }
+
+    /* Contact Columns */
+
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .column1 {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .column2 {
+        width: 80%;
+        margin: 10%;
+    }
+
+    /* Bubble Formatting */
+
+    .galleryset {
+        display: none;
+    }
+        
+    .homeset {
+        display: none;
+    }
+        
+    .pricingset {
+        display: none;
+    }
+        
+    .aboutset {
+        display: none;
+    }
+    
+    .reviewset {
+        display: none;
+    }
+    
+    .contactset {
+        display: none;
+    }
+}
+
+/* Tablet format */
+
+@media (min-width: 950px) and (max-width: 1400px) {
+    /* Navigation Menu */
+
+    nav a img {
+        margin-left: 20px;
+    }
+
+    nav a {
+        font-size: 20px;
+        margin-left: -5px;
+    }
+
+    nav a:hover {
+        font-size: 23px;
+    }
+
+    /* Heading */
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* Index Navigation Bones */
+
+    div .indexnav {
+        margin-left: 20%;
+    }
+
+    /* Review Testimonials */
+
+    p.testimonials {
+        margin: 20px;
+        padding: 5px;
+    }
+
+    /* Gallery Images */
+
+    .gallery img {
+        width: 180px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* About Column */
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .column h2 {
+        font-size: 30px;
+    }
+
+    .column p {
+        font-size: 20px;
+    }
+
+    /* Bubble Formatting */
+
+    .galleryset {
+        display: none;
+    }
+    
+    .homeset {
+        display: none;
+    }
+    
+    .pricingset {
+        display: none;
+    }
+    
+    .aboutset {
+        display: none;
+    }
+
+    .reviewset {
+        display: none;
+    }
+
+    .contactset {
+        display: none;
+    }
+}
+
+/* Desktop format */
+
+@media (min-width: 1400px) {
+    /* Navigation menu */
+    nav { 
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    nav a {
+        font-size: 30px;
+        padding: 7px 10px;
+        border-radius: 3px;
+    }
+
+    nav #icon {
+        display: none;
+    }
+
+    /* Heading */
+
+    h1 {
+        font-size: 55px;
+    }
+
+    /* Index Navigation Bones */
+
+    .navleft {
+        padding-left: 7%;
+    }
+    
+    .navright {
+        float: right;
+        padding-right: 7%; 
+    }
+
+    /* Pricing Table */
+
+    h2.note {
+        color: #0f385b;
+        padding-bottom: 15px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Gallery Images */
+
+    .gallery img {
+        width: 230px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 50px;
+    }
+
+    /* Review Testimonials */
+
+    p.testimonials {
+        margin: 25px;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    /* About Column */
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    .column h2 {
+        font-size: 48px;
+    }
+
+    .column p {
+        font-size: 24px;
+    }
+
+    /* Contact Columns */
+
+    .column1 h3 {
+        font-size: 30px;
+    }
+
+    .column2 h3 {
+        font-size: 30px;
+    }
+
+    .column2 p {
+        font-size: 24px;
+    }
+
+        
+    /* Home Bubble Formatting */
+    
+    section .indexset {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;;
+    }
+    
+    section .indexset div {
+        position: absolute;
+        display: block;
+    }
+
+    /* Home Bubbles */
+    
+    section .indexset div:nth-child(1) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .indexset div:nth-child(2) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .indexset div:nth-child(3) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .indexset div:nth-child(4) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .indexset div:nth-child(5) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s; 
+    }
+    
+    section .indexset div:nth-child(6) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .indexset div:nth-child(7) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .indexset div:nth-child(8) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .indexset div:nth-child(9) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .indexset div:nth-child(10) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .indexset div:nth-child(11) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .indexset div:nth-child(12) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .indexset div:nth-child(13) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .indexset div:nth-child(14) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .indexset div:nth-child(15) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .indexset div:nth-child(16) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .indexset div:nth-child(17) {
+        left: 1%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .indexset div:nth-child(18) {
+        left: 95%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .indexset div:nth-child(19) {
+        left: 3%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .indexset div:nth-child(20) {
+        left: 92%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    /* Pricing Bubble Formatting */
+    
+    section .priceset {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;;
+    }
+    
+    section .priceset div {
+        position: absolute;
+        display: block;
+    }
+
+    /* Pricing Bubbles */
+    
+    section .priceset div:nth-child(1) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .priceset div:nth-child(2) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .priceset div:nth-child(3) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .priceset div:nth-child(4) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .priceset div:nth-child(5) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -6s; 
+    }
+    
+    section .priceset div:nth-child(6) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .priceset div:nth-child(7) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .priceset div:nth-child(8) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .priceset div:nth-child(9) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .priceset div:nth-child(10) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .priceset div:nth-child(11) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .priceset div:nth-child(12) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .priceset div:nth-child(13) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .priceset div:nth-child(14) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .priceset div:nth-child(15) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .priceset div:nth-child(16) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .priceset div:nth-child(17) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -24s;
+    }
+    
+    section .priceset div:nth-child(18) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -24s;
+    }
+    
+    section .priceset div:nth-child(19) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -27s;
+    }
+    
+    section .priceset div:nth-child(20) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -27s;
+    }
+    
+    section .priceset div:nth-child(21) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -30s;
+    }
+    
+    section .priceset div:nth-child(22) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -30s; 
+    }
+    
+    section .priceset div:nth-child(23) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -33s;
+    }
+    
+    section .priceset div:nth-child(24) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -33s;
+    }
+    
+    section .priceset div:nth-child(25) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -36s; 
+    }
+    
+    section .priceset div:nth-child(26) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -36s;
+    }
+    
+    section .priceset div:nth-child(27) {
+        left: 3%;
+        animation: animate 45s linear infinite;
+        animation-delay: -39s;
+    }
+    
+    section .priceset div:nth-child(28) {
+        left: 92%;
+        animation: animate 45s linear infinite;
+        animation-delay: -39s;
+    }
+    
+    section .priceset div:nth-child(29) {
+        left: 1%;
+        animation: animate 45s linear infinite;
+        animation-delay: -42s;
+    }
+    
+    section .priceset div:nth-child(30) {
+        left: 95%;
+        animation: animate 45s linear infinite;
+        animation-delay: -42s;
+    }
+
+    /* Gallery Bubble Formatting */
+
+    section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #0f385b;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    section .set {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;;
+    }
+    
+    section .set div {
+        position: absolute;
+        display: block;
+    }
+    
+    /* Gallery bubbles */
+    
+    section .set div:nth-child(1) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .set div:nth-child(2) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .set div:nth-child(3) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -2s;
+    }
+    
+    section .set div:nth-child(4) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -2s;
+    }
+    
+    section .set div:nth-child(5) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -4s; 
+    }
+    
+    section .set div:nth-child(6) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -4s;
+    }
+    
+    section .set div:nth-child(7) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .set div:nth-child(8) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .set div:nth-child(9) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -8s;
+    }
+    
+    section .set div:nth-child(10) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -8s;
+    }
+    
+    section .set div:nth-child(11) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -10s;
+    }
+    
+    section .set div:nth-child(12) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -10s;
+    }
+    
+    section .set div:nth-child(13) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .set div:nth-child(14) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .set div:nth-child(15) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -14s;
+    }
+    
+    section .set div:nth-child(16) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -14s;
+    }
+    
+    section .set div:nth-child(17) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .set div:nth-child(18) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .set div:nth-child(19) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .set div:nth-child(20) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .set div:nth-child(21) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -20s;
+    }
+    
+    section .set div:nth-child(22) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -20s; 
+    }
+    
+    section .set div:nth-child(23) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -22s;
+    }
+    
+    section .set div:nth-child(24) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -22s;
+    }
+    
+    section .set div:nth-child(25) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -24s; 
+    }
+    
+    section .set div:nth-child(26) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -24s;
+    }
+    
+    section .set div:nth-child(27) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -26s;
+    }
+    
+    section .set div:nth-child(28) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -26s;
+    }
+    
+    section .set div:nth-child(29) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -28s;
+    }
+    
+    section .set div:nth-child(30) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -28s;
+    }
+    
+    section .set div:nth-child(31) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -30s;
+    }
+    
+    section .set div:nth-child(32) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -30s;
+    }
+    
+    section .set div:nth-child(33) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -32s;
+    }
+    
+    section .set div:nth-child(34) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -32s;
+    }
+    
+    section .set div:nth-child(35) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -34s;
+    }
+    
+    section .set div:nth-child(36) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -34s;
+    }
+    
+    section .set div:nth-child(37) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -36s;
+    }
+    
+    section .set div:nth-child(38) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -36s;
+    }
+    
+    section .set div:nth-child(39) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -38s;
+    }
+    
+    section .set div:nth-child(40) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -38s;
+    }
+    
+    section .set div:nth-child(41) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -40s;
+    }
+    
+    section .set div:nth-child(42) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -40s;
+    }
+    
+    section .set div:nth-child(43) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -42s;
+    }
+    
+    section .set div:nth-child(44) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -42s;
+    }
+    
+    section .set div:nth-child(45) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -44s;
+    }
+    
+    section .set div:nth-child(46) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -44s;
+    }
+    
+    section .set div:nth-child(47) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -46s;
+    }
+    
+    section .set div:nth-child(48) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -46s;
+    }
+    
+    section .set div:nth-child(49) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -48s;
+    }
+    
+    section .set div:nth-child(50) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -48s;
+    }
+    
+    section .set div:nth-child(51) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -50s;
+    }
+    
+    section .set div:nth-child(52) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -50s;
+    }
+    
+    section .set div:nth-child(53) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -52s;
+    }
+    
+    section .set div:nth-child(54) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -52s;
+    }
+    
+    section .set div:nth-child(55) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -54s;
+    }
+    
+    section .set div:nth-child(56) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -54s;
+    }
+    
+    section .set div:nth-child(57) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -56s;
+    }
+    
+    section .set div:nth-child(58) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -56s;
+    }
+    
+    section .set div:nth-child(59) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -58s;
+    }
+    
+    section .set div:nth-child(60) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -58s;
+    }
+    
+    section .set div:nth-child(61) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -60s;
+    }
+    
+    section .set div:nth-child(62) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -60s; 
+    }
+    
+    section .set div:nth-child(63) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -62s;
+    }
+    
+    section .set div:nth-child(64) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -62s;
+    }
+    
+    section .set div:nth-child(65) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -64s; 
+    }
+    
+    section .set div:nth-child(66) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -64s;
+    }
+    
+    section .set div:nth-child(67) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -66s;
+    }
+    
+    section .set div:nth-child(68) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -66s;
+    }
+    
+    section .set div:nth-child(69) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -68s;
+    }
+    
+    section .set div:nth-child(70) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -68s;
+    }
+    
+    section .set div:nth-child(71) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -70s;
+    }
+    
+    section .set div:nth-child(72) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -70s;
+    }
+    
+    section .set div:nth-child(73) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -72s;
+    }
+    
+    section .set div:nth-child(74) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -72s;
+    }
+    
+    section .set div:nth-child(75) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -74s;
+    }
+    
+    section .set div:nth-child(76) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -74s;
+    }
+    
+    section .set div:nth-child(77) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -76s;
+    }
+    
+    section .set div:nth-child(78) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -76s;
+    }
+    
+    section .set div:nth-child(79) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -78s;
+    }
+    
+    section .set div:nth-child(80) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -78s;
+    }
+    
+    section .set div:nth-child(81) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -80s;
+    }
+    
+    section .set div:nth-child(82) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -80s; 
+    }
+    
+    section .set div:nth-child(83) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -82s;
+    }
+    
+    section .set div:nth-child(84) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -82s;
+    }
+    
+    section .set div:nth-child(85) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -84s; 
+    }
+    
+    section .set div:nth-child(86) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -84s;
+    }
+    
+    section .set div:nth-child(87) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -86s;
+    }
+    
+    section .set div:nth-child(88) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -86s;
+    }
+    
+    section .set div:nth-child(89) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -88s;
+    }
+    
+    section .set div:nth-child(90) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -88s;
+    }
+    
+    section .set div:nth-child(91) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -90s;
+    }
+    
+    section .set div:nth-child(92) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -90s;
+    }
+    
+    section .set div:nth-child(93) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -92s;
+    }
+    
+    section .set div:nth-child(94) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -92s;
+    }
+    
+    section .set div:nth-child(95) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -94s;
+    }
+    
+    section .set div:nth-child(96) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -94s;
+    }
+    
+    section .set div:nth-child(97) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -96s;
+    }
+    
+    section .set div:nth-child(98) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -96s;
+    }
+    
+    section .set div:nth-child(99) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -98s;
+    }
+    
+    section .set div:nth-child(100) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -98s;
+    }
+    
+    section .set div:nth-child(101) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -100s;
+    }
+    
+    section .set div:nth-child(102) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -100s;
+    }
+    
+    section .set div:nth-child(103) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -102s;
+    }
+    
+    section .set div:nth-child(104) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -102s;
+    }
+    
+    section .set div:nth-child(105) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -104s;
+    }
+    
+    section .set div:nth-child(106) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -104s;
+    }
+    
+    section .set div:nth-child(107) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -106s;
+    }
+    
+    section .set div:nth-child(108) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -106s;
+    }
+    
+    section .set div:nth-child(109) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -108s;
+    }
+    
+    section .set div:nth-child(110) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -108s;
+    }
+    
+    section .set div:nth-child(111) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -110s;
+    }
+    
+    section .set div:nth-child(112) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -110s;
+    }
+    
+    section .set div:nth-child(113) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -112s;
+    }
+    
+    section .set div:nth-child(114) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -112s;
+    }
+    
+    section .set div:nth-child(115) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -114s;
+    }
+    
+    section .set div:nth-child(116) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -114s;
+    }
+    
+    section .set div:nth-child(117) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -116s;
+    }
+    
+    section .set div:nth-child(118) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -116s;
+    }
+    
+    section .set div:nth-child(119) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -118s;
+    }
+    
+    section .set div:nth-child(120) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -118s;
+    }
+
+    section .set div:nth-child(121) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -120s;
+    }
+    
+    section .set div:nth-child(122) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -120s; 
+    }
+    
+    section .set div:nth-child(123) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -122s;
+    }
+    
+    section .set div:nth-child(124) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -122s;
+    }
+    
+    section .set div:nth-child(125) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -124s; 
+    }
+    
+    section .set div:nth-child(126) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -124s;
+    }
+    
+    section .set div:nth-child(127) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -126s;
+    }
+    
+    section .set div:nth-child(128) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -126s;
+    }
+    
+    section .set div:nth-child(129) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -128s;
+    }
+    
+    section .set div:nth-child(130) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -128s;
+    }
+    
+    section .set div:nth-child(131) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -130s;
+    }
+    
+    section .set div:nth-child(132) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -130s;
+    }
+    
+    section .set div:nth-child(133) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -132s;
+    }
+    
+    section .set div:nth-child(134) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -132s;
+    }
+    
+    section .set div:nth-child(135) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -134s;
+    }
+    
+    section .set div:nth-child(136) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -134s;
+    }
+    
+    section .set div:nth-child(137) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -136s;
+    }
+    
+    section .set div:nth-child(138) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -136s;
+    }
+    
+    section .set div:nth-child(139) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -138s;
+    }
+    
+    section .set div:nth-child(140) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -138s;
+    }
+    
+    section .set div:nth-child(141) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -140s;
+    }
+    
+    section .set div:nth-child(142) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -140s; 
+    }
+    
+    section .set div:nth-child(143) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -142s;
+    }
+    
+    section .set div:nth-child(144) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -142s;
+    }
+    
+    section .set div:nth-child(145) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -144s; 
+    }
+    
+    section .set div:nth-child(146) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -144s;
+    }
+    
+    section .set div:nth-child(147) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -146s;
+    }
+    
+    section .set div:nth-child(148) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -146s;
+    }
+    
+    section .set div:nth-child(149) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -148s;
+    }
+    
+    section .set div:nth-child(150) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -148s;
+    }
+    
+    section .set div:nth-child(151) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -150s;
+    }
+    
+    section .set div:nth-child(152) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -150s;
+    }
+    
+    section .set div:nth-child(153) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -152s;
+    }
+    
+    section .set div:nth-child(154) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -152s;
+    }
+    
+    section .set div:nth-child(155) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -154s;
+    }
+    
+    section .set div:nth-child(156) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -154s;
+    }
+    
+    section .set div:nth-child(157) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -156s;
+    }
+    
+    section .set div:nth-child(158) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -156s;
+    }
+    
+    section .set div:nth-child(159) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -158s;
+    }
+    
+    section .set div:nth-child(160) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -158s;
+    }
+    
+    section .set div:nth-child(161) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -160s;
+    }
+    
+    section .set div:nth-child(162) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -160s;
+    }
+    
+    section .set div:nth-child(163) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -162s;
+    }
+    
+    section .set div:nth-child(164) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -162s;
+    }
+    
+    section .set div:nth-child(165) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -164s;
+    }
+    
+    section .set div:nth-child(166) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -164s;
+    }
+    
+    section .set div:nth-child(167) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -166s;
+    }
+    
+    section .set div:nth-child(168) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -166s;
+    }
+    
+    section .set div:nth-child(169) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -168s;
+    }
+    
+    section .set div:nth-child(170) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -168s;
+    }
+    
+    section .set div:nth-child(171) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -170s;
+    }
+    
+    section .set div:nth-child(172) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -170s;
+    }
+    
+    section .set div:nth-child(173) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -172s;
+    }
+    
+    section .set div:nth-child(174) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -172s;
+    }
+    
+    section .set div:nth-child(175) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -174s;
+    }
+    
+    section .set div:nth-child(176) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -174s;
+    }
+    
+    section .set div:nth-child(177) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -176s;
+    }
+    
+    section .set div:nth-child(178) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -176s;
+    }
+    
+    section .set div:nth-child(179) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -178s;
+    }
+    
+    section .set div:nth-child(180) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -178s;
+    }
+    
+    section .set div:nth-child(181) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -180s;
+    }
+    
+    section .set div:nth-child(182) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -180s; 
+    }
+    
+    section .set div:nth-child(183) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -182s;
+    }
+    
+    section .set div:nth-child(184) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -182s;
+    }
+    
+    section .set div:nth-child(185) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -184s; 
+    }
+    
+    section .set div:nth-child(186) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -184s;
+    }
+    
+    section .set div:nth-child(187) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -186s;
+    }
+    
+    section .set div:nth-child(188) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -186s;
+    }
+    
+    section .set div:nth-child(189) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -188s;
+    }
+    
+    section .set div:nth-child(190) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -188s;
+    }
+    
+    section .set div:nth-child(191) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -190s;
+    }
+    
+    section .set div:nth-child(192) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -190s;
+    }
+    
+    section .set div:nth-child(193) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -192s;
+    }
+    
+    section .set div:nth-child(194) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -192s;
+    }
+    
+    section .set div:nth-child(195) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -194s;
+    }
+    
+    section .set div:nth-child(196) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -194s;
+    }
+    
+    section .set div:nth-child(197) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -196s;
+    }
+    
+    section .set div:nth-child(198) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -196s;
+    }
+    
+    section .set div:nth-child(199) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -198s;
+    }
+    
+    section .set div:nth-child(200) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -198s;
+    }
+    
+    section .set div:nth-child(201) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -200s;
+    }
+    
+    section .set div:nth-child(202) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -200s; 
+    }
+    
+    section .set div:nth-child(203) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -202s;
+    }
+    
+    section .set div:nth-child(204) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -202s;
+    }
+    
+    section .set div:nth-child(205) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -204s; 
+    }
+    
+    section .set div:nth-child(206) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -204s;
+    }
+    
+    section .set div:nth-child(207) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -206s;
+    }
+    
+    section .set div:nth-child(208) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -206s;
+    }
+    
+    section .set div:nth-child(209) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -208s;
+    }
+    
+    section .set div:nth-child(210) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -208s;
+    }
+    
+    section .set div:nth-child(211) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -210s;
+    }
+    
+    section .set div:nth-child(212) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -210s;
+    }
+    
+    section .set div:nth-child(213) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -212s;
+    }
+    
+    section .set div:nth-child(214) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -212s;
+    }
+    
+    section .set div:nth-child(215) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -214s;
+    }
+    
+    section .set div:nth-child(216) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -214s;
+    }
+    
+    section .set div:nth-child(217) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -216s;
+    }
+    
+    section .set div:nth-child(218) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -216s;
+    }
+    
+    section .set div:nth-child(219) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -218s;
+    }
+    
+    section .set div:nth-child(220) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -218s;
+    }
+    
+    section .set div:nth-child(221) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -220s;
+    }
+    
+    section .set div:nth-child(222) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -220s;
+    }
+    
+    section .set div:nth-child(223) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -222s;
+    }
+    
+    section .set div:nth-child(224) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -222s;
+    }
+    
+    section .set div:nth-child(225) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -224s;
+    }
+    
+    section .set div:nth-child(226) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -224s;
+    }
+    
+    section .set div:nth-child(227) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -226s;
+    }
+    
+    section .set div:nth-child(228) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -226s;
+    }
+    
+    section .set div:nth-child(229) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -228s;
+    }
+    
+    section .set div:nth-child(230) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -228s;
+    }
+    
+    section .set div:nth-child(231) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -230s;
+    }
+    
+    section .set div:nth-child(232) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -230s;
+    }
+    
+    section .set div:nth-child(233) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -232s;
+    }
+    
+    section .set div:nth-child(234) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -232s;
+    }
+    
+    section .set div:nth-child(235) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -234s;
+    }
+    
+    section .set div:nth-child(236) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -234s;
+    }
+    
+    section .set div:nth-child(237) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -236s;
+    }
+    
+    section .set div:nth-child(238) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -236s;
+    }
+    
+    section .set div:nth-child(239) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -238s;
+    }
+    
+    section .set div:nth-child(240) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -238s;
+    }
+
+    section .set div:nth-child(241) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -240s;
+    }
+    
+    section .set div:nth-child(242) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -240s; 
+    }
+    
+    section .set div:nth-child(243) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -242s;
+    }
+    
+    section .set div:nth-child(244) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -242s;
+    }
+    
+    section .set div:nth-child(245) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -244s; 
+    }
+    
+    section .set div:nth-child(246) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -244s;
+    }
+    
+    section .set div:nth-child(247) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -246s;
+    }
+    
+    section .set div:nth-child(248) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -246s;
+    }
+    
+    section .set div:nth-child(249) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -248s;
+    }
+    
+    section .set div:nth-child(250) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -248s;
+    }
+    
+    section .set div:nth-child(251) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -250s;
+    }
+    
+    section .set div:nth-child(252) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -250s;
+    }
+    
+    section .set div:nth-child(253) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -252s;
+    }
+    
+    section .set div:nth-child(254) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -252s;
+    }
+    
+    section .set div:nth-child(255) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -254s;
+    }
+    
+    section .set div:nth-child(256) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -254s;
+    }
+    
+    section .set div:nth-child(257) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -256s;
+    }
+    
+    section .set div:nth-child(258) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -256s;
+    }
+    
+    section .set div:nth-child(259) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -258s;
+    }
+    
+    section .set div:nth-child(260) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -258s;
+    }
+    
+    section .set div:nth-child(261) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -260s;
+    }
+    
+    section .set div:nth-child(262) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -260s;
+    }
+    
+    section .set div:nth-child(263) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -262s;
+    }
+    
+    section .set div:nth-child(264) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -262s;
+    }
+    
+    section .set div:nth-child(265) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -264s;
+    }
+    
+    section .set div:nth-child(266) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -264s;
+    }
+    
+    section .set div:nth-child(267) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -266s;
+    }
+    
+    section .set div:nth-child(268) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -266s;
+    }
+    
+    section .set div:nth-child(269) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -268s;
+    }
+    
+    section .set div:nth-child(270) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -268s;
+    }
+    
+    section .set div:nth-child(271) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -270s;
+    }
+    
+    section .set div:nth-child(272) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -270s;
+    }
+    
+    section .set div:nth-child(273) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -272s;
+    }
+    
+    section .set div:nth-child(274) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -272s;
+    }
+    
+    section .set div:nth-child(275) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -274s;
+    }
+    
+    section .set div:nth-child(276) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -274s;
+    }
+    
+    section .set div:nth-child(277) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -276s;
+    }
+    
+    section .set div:nth-child(278) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -276s;
+    }
+    
+    section .set div:nth-child(279) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -278s;
+    }
+    
+    section .set div:nth-child(280) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -278s;
+    }
+    
+    section .set div:nth-child(281) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -280s;
+    }
+    
+    section .set div:nth-child(282) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -280s; 
+    }
+    
+    section .set div:nth-child(283) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -282s;
+    }
+    
+    section .set div:nth-child(284) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -282s;
+    }
+    
+    section .set div:nth-child(285) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -284s; 
+    }
+    
+    section .set div:nth-child(286) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -284s;
+    }
+    
+    section .set div:nth-child(287) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -286s;
+    }
+    
+    section .set div:nth-child(288) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -286s;
+    }
+    
+    section .set div:nth-child(289) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -288s;
+    }
+    
+    section .set div:nth-child(290) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -288s;
+    }
+    
+    section .set div:nth-child(291) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -290s;
+    }
+    
+    section .set div:nth-child(292) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -290s;
+    }
+    
+    section .set div:nth-child(293) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -292s;
+    }
+    
+    section .set div:nth-child(294) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -292s;
+    }
+    
+    section .set div:nth-child(295) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -294s;
+    }
+    
+    section .set div:nth-child(296) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -294s;
+    }
+    
+    section .set div:nth-child(297) {
+        left: 1%;
+        animation: animate 300s linear infinite;
+        animation-delay: -296s;
+    }
+    
+    section .set div:nth-child(298) {
+        left: 95%;
+        animation: animate 300s linear infinite;
+        animation-delay: -296s;
+    }
+    
+    section .set div:nth-child(299) {
+        left: 3%;
+        animation: animate 300s linear infinite;
+        animation-delay: -298s;
+    }
+    
+    section .set div:nth-child(300) {
+        left: 92%;
+        animation: animate 300s linear infinite;
+        animation-delay: -298s;
+    }
+    
+    /* About Bubble Formatting */
+    
+    section .aboutpageset {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    
+    section .aboutpageset div {
+        position: absolute;
+        display: block;
+    }
+
+    /* About Bubbles */
+    
+    section .aboutpageset div:nth-child(1) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .aboutpageset div:nth-child(2) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .aboutpageset div:nth-child(3) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .aboutpageset div:nth-child(4) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .aboutpageset div:nth-child(5) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s; 
+    }
+    
+    section .aboutpageset div:nth-child(6) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .aboutpageset div:nth-child(7) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .aboutpageset div:nth-child(8) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .aboutpageset div:nth-child(9) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .aboutpageset div:nth-child(10) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .aboutpageset div:nth-child(11) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .aboutpageset div:nth-child(12) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .aboutpageset div:nth-child(13) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .aboutpageset div:nth-child(14) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .aboutpageset div:nth-child(15) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .aboutpageset div:nth-child(16) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .aboutpageset div:nth-child(17) {
+        left: 1%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .aboutpageset div:nth-child(18) {
+        left: 95%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .aboutpageset div:nth-child(19) {
+        left: 3%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .aboutpageset div:nth-child(20) {
+        left: 92%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+
+    /* Review Bubble Formatting */
+    
+    section .reviewpageset {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    
+    section .reviewpageset div {
+        position: absolute;
+        display: block;
+    }
+
+    /* Review Bubbles */
+    
+    section .reviewpageset div:nth-child(1) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .reviewpageset div:nth-child(2) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .reviewpageset div:nth-child(3) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -2s;
+    }
+    
+    section .reviewpageset div:nth-child(4) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -2s;
+    }
+    
+    section .reviewpageset div:nth-child(5) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -4s; 
+    }
+    
+    section .reviewpageset div:nth-child(6) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -4s;
+    }
+    
+    section .reviewpageset div:nth-child(7) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .reviewpageset div:nth-child(8) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .reviewpageset div:nth-child(9) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -8s;
+    }
+    
+    section .reviewpageset div:nth-child(10) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -8s;
+    }
+    
+    section .reviewpageset div:nth-child(11) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -10s;
+    }
+    
+    section .reviewpageset div:nth-child(12) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -10s;
+    }
+    
+    section .reviewpageset div:nth-child(13) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .reviewpageset div:nth-child(14) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .reviewpageset div:nth-child(15) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -14s;
+    }
+    
+    section .reviewpageset div:nth-child(16) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -14s;
+    }
+    
+    section .reviewpageset div:nth-child(17) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .reviewpageset div:nth-child(18) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .reviewpageset div:nth-child(19) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .reviewpageset div:nth-child(20) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+
+    section .reviewpageset div:nth-child(21) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -20s;
+    }
+    
+    section .reviewpageset div:nth-child(22) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -20s; 
+    }
+    
+    section .reviewpageset div:nth-child(23) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -22s;
+    }
+    
+    section .reviewpageset div:nth-child(24) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -22s;
+    }
+    
+    /* section .reviewpageset div:nth-child(25) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -24s; 
+    }
+    
+    section .reviewpageset div:nth-child(26) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -24s; 
+    } */
+
+    /* Contact Bubble Formatting */
+    
+    section .contactpageset {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    
+    section .contactpageset div {
+        position: absolute;
+        display: block;
+    }
+
+    /* Contact Bubbles */
+    
+    section .contactpageset div:nth-child(1) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    section .contactpageset div:nth-child(2) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: 0s; 
+    }
+    
+    section .contactpageset div:nth-child(3) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .contactpageset div:nth-child(4) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -3s;
+    }
+    
+    section .contactpageset div:nth-child(5) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s; 
+    }
+    
+    section .contactpageset div:nth-child(6) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -6s;
+    }
+    
+    section .contactpageset div:nth-child(7) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .contactpageset div:nth-child(8) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -9s;
+    }
+    
+    section .contactpageset div:nth-child(9) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .contactpageset div:nth-child(10) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -12s;
+    }
+    
+    section .contactpageset div:nth-child(11) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .contactpageset div:nth-child(12) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -15s;
+    }
+    
+    section .contactpageset div:nth-child(13) {
+        left: 1%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .contactpageset div:nth-child(14) {
+        left: 95%;
+        animation: animate 24s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .contactpageset div:nth-child(15) {
+        left: 3%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .contactpageset div:nth-child(16) {
+        left: 92%;
+        animation: animate 24s linear infinite;
+        animation-delay: -21s;
+    }
+    
+    section .contactpageset div:nth-child(17) {
+        left: 1%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .contactpageset div:nth-child(18) {
+        left: 95%;
+        animation: animate 20s linear infinite;
+        animation-delay: -16s;
+    }
+    
+    section .contactpageset div:nth-child(19) {
+        left: 3%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+    
+    section .contactpageset div:nth-child(20) {
+        left: 92%;
+        animation: animate 20s linear infinite;
+        animation-delay: -18s;
+    }
+}
+
+/* Bubble Animation */
+
+@keyframes animate {
+    0% {
+        opactiy: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    } 10% {
+        opacity: 1;
+    } 20% {
+        transform: translateX(-20px) rotate(0deg);
+    } 40% {
+        transform: translateX(-20px) rotate(0deg);
+    } 60% {
+        transform: translateX(20px) rotate(0deg);
+    } 80% {
+        transform: translateX(-20px) rotate(0deg);
+    } 100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(0deg);
+    }
+}
