@@ -392,7 +392,7 @@ footer {
     
     nav a {
         font-size: 17px;
-        height: 100px;
+        height: 80px;
     }
 
     nav #icon {
@@ -407,7 +407,7 @@ footer {
         width: 80%;
         height: 100vh;
         background-color: #fbfcfd;
-        margin-top: 50px;
+        margin-top: 17px;
         margin-left: 10%;
         left: -100%;
         text-align: center;
@@ -416,12 +416,13 @@ footer {
 
     nav li {
         display: block;
-        margin: 10px 0;
-        line-height: 10px;
+        margin: 5px 0;
+        line-height: 5px;
     }
     
     nav a {
-        font-size: 30px;
+        font-size: 22px;
+        margin-bottom: -12px;
     }
 
     nav ul.show {
